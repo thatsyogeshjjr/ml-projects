@@ -23,5 +23,5 @@ model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
 # train model
-model.fit(x_train, y_train)
-model.save('handwritten_digits.model')
+model.fit(x_train, y_train, epochs=3)
+model.save('handwritten_digits.model.keras')
